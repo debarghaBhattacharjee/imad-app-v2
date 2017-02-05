@@ -9,7 +9,7 @@ element.innerHTML= 'New Value!!';
 var element_img= document.getElementById("elementImg");
 var marginLeft= 0;
 
-function moveRight{
+function moveRight() {
 	marginLeft= marginLeft+ 5;
     element_img.style.marginLeft= marginLeft+ "px";
 }
