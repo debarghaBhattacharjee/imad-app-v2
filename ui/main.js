@@ -8,6 +8,6 @@ element.innerHTML= 'New Value!!';
 
 var element_img= document.getElementById("elementImg");
 element_img.onclick= function() {
-    img.style.marginLeft= "200px";
+    img.style.marginRight= "400px";
 };
 
