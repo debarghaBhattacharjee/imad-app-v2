@@ -21,7 +21,8 @@ body {
 }
 
 .configuration {
-	margin: 0 auto;
+	margin-left: 100 px;
+	margin-right: 100 px;
 	background-color: red;
 	font-family: sans-serif;
 }
