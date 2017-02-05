@@ -10,7 +10,7 @@ var element_img= document.getElementById("elementImg");
 var marginLeft= 0;
 
 function moveRight() {
-	marginLeft= marginLeft+ 5;
+	marginLeft= marginLeft+ 1;
     element_img.style.marginLeft= marginLeft+ "px";
 }
 
