@@ -6,9 +6,9 @@ var app = express();
 app.use(morgan('combined'));
 
 var articleOne= {
-	title: 'Article One| Debargha Bhattacharjee'
-	heading: 'Article One'
-	date: '5 Sept, 2016, 7:20 PM IST'
+	title: 'Article One| Debargha Bhattacharjee',
+	heading: 'Article One',
+	date: '5 Sept, 2016, 7:20 PM IST',
 	content: `<p>
 				    This is the first article. This was done by Debargha Bhattacharjee for testing purposes.
 				    The remaining lines would be just repetitions of the above lines.
