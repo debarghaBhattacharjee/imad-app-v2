@@ -9,4 +9,4 @@ var content= `<p>
 			  </p>`;
 			  
 var element= document.getElementById('main_text');
-element.innerHtml= ${content};
+element.innerHtml= content;
