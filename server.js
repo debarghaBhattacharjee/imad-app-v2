@@ -30,8 +30,7 @@ function createTemplete (data) {
 	var content= data.content; 
 	
 	var htmlTemplate= {
-		`<!doctype html>
-		<html>
+		`<html>
 			<head>
 				${title}
 				<link href="../ui/style.css" rel="stylesheet" />
