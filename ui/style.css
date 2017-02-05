@@ -23,6 +23,7 @@ body {
 .configuration {
 	margin: 0 auto;
 	padding: 30px;
+	text-align: center;
 	background-color: #76CF64;
 	font-family: sans-serif;
 }
