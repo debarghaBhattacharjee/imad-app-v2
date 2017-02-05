@@ -7,7 +7,7 @@ var element= document.getElementById("main_text");
 element.innerHTML= 'New Value!!';
 
 var element_img= document.getElementById("img");
-element_img.onclik= function() {
+element_img.onclick= function() {
     img.style.marginLeft= "200px";
 };
 
