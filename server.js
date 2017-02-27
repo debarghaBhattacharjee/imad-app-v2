@@ -10,7 +10,7 @@ var articles= {
 		title: 'Article One| Debargha Bhattacharjee',
 		heading: 'Article One',
 		date: '5 Sept, 2016, 7:20 PM IST',
-		content: 	`<p>
+		content: 	`<p>n
 						This is the first article. This was done by Debargha Bhattacharjee for testing purposes.
 						The remaining lines would be just repetitions of the above lines.
 					</p>
@@ -95,6 +95,10 @@ function createTemplate (data) {
 		
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'home', 'home.html'));
 });
 
 app.get('/:articleName', function(req, res) {
