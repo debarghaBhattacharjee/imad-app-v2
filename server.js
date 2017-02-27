@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 app.use(express.static("public"));
-app.use('../home', express.static(__dirname+'/home'));
+app.use('/home', express.static(__dirname+'/home'));
 
 var articles= {
 	'article-one': {
@@ -100,10 +100,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/home', function (req, res) {
-  res.sendFile(path.join(__dirname, 'home', 'home.html'));
-});
-
 app.get('/:articleName', function(req, res) {
 	//article-name== article-one
 	//articles[article-name]== {} content object for article one
@@ -121,6 +117,10 @@ app.get('/ui/main.js', function (req, res) {
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
+app.get('/home', function (req, res) {
+  res.sendFile(path.join(__dirname, 'home', 'home.html'));
 });
 
 
