@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.slideshow{ 
+	margin-top: 60px;
+	cursor: pointer;
+}
+ 
+#myImage{
+	width: 100%;
+}
+
+@media screen and (max-width: 470px){
+	.slideshow{
+		margin-top: 5px;
+	}
+}
+
+img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+}
+
+img:hover {
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+}
+
