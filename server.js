@@ -5,6 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+app.use(express.static("public"));
+app.use('/home', express.static(__dirname+'/home'));
+
 var articles= {
 	'article-one': {
 		title: 'Article One| Debargha Bhattacharjee',
