@@ -8,6 +8,8 @@ app.use(morgan('combined'));
 app.use(express.static("public"));
 app.use('/home', express.static(__dirname+'/home'));
 
+app.use('/p6', express.static(__dirname+'/p6'));
+
 var articles= {
 	'article-one': {
 		title: 'Article One| Debargha Bhattacharjee',
@@ -104,6 +106,13 @@ app.get('/home', function (req, res) {
   res.sendFile(path.join(__dirname, 'home', 'home.html'));
 });
 
+<<<<<<< HEAD
+app.get('/p6', function (req, res) {
+  res.sendFile(path.join(__dirname, 'p6', 'index.html'));
+});
+
+=======
+>>>>>>> 7511bcfbc1b7159e1df7b4ea69950a891ba5c836
 app.get('/:articleName', function(req, res) {
 	//article-name== article-one
 	//articles[article-name]== {} content object for article one
@@ -123,6 +132,10 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 7511bcfbc1b7159e1df7b4ea69950a891ba5c836
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
