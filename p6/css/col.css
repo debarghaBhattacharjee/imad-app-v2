@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+ .text-justify {
+	 text-align: center;
+	 overflow: scroll;
+ }
+ 
+ .text-justify-form {
+	 text-align: center;
+ }
+ 
+ #form-style {
+	 text-align: left;
+	 padding-bottom: 30px;
+ }
+ /*
+ 
+ .nav-user-defined {
+	 width: 100%;	 
+	 position: fixed;
+     z-index: 1;
+ }
+ 
+.website-heading-user {
+	margin-top: 100px;
+}*/
+	 
+ 
+ 
+
