@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 
 app.use(express.static("public"));
 
-app.use('/', express.static(__dirname+'/scoopbook'));
+app.use('/', express.static(__dirname+'/ui'));
 
 app.use(session({
 	secret: 'SomeRandomString',
