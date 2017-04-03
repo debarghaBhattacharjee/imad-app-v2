@@ -33,6 +33,24 @@ app.use(session({
 
 /* --------------------------------------------------------------------------------------------------------------------------------- */
 
+function checkAuth(req, res, next) {
+	if(!(req.session &&  req.session.auth && req.session.auth.userId)) {
+		res.status(403).send('You are not logged in...');
+	}
+	else {
+		next();
+	}
+}
+
+function reAuth(req, res, next) {
+	if(req.session &&  req.session.auth && req.session.auth.userId) {
+		res.send(req.session.auth.fname);
+	}
+	else {
+		next();
+	}
+}
+
 app.post('/register', function(req, res) {
 	console.log(req.body);
 	var fname= req.body.fname;
@@ -57,9 +75,10 @@ app.post('/register', function(req, res) {
 	});
 });	
 
-app.post('/login', function(req, res) {
+app.post('/login', reAuth, function(req, res) {
 	var username= req.body.uname;
 	var password= req.body.psw;
+	
 	
 	pool.query('SELECT * FROM scoopbook_data WHERE username= $1;', [username], function(err, result) {
 		if(err) {
@@ -88,13 +107,8 @@ app.post('/login', function(req, res) {
 	});		
 });	
 
-app.get('/check-login', function(req, res) {
-	if(req.session &&  req.session.auth && req.session.auth.userId) {
-		res.send(req.session.auth.fname);
-	}
-	else {
-		res.status(403).send('You are not logged in...');
-	}
+app.get('/check-login', checkAuth, function(req, res) {
+	res.send(req.session.auth.fname);	
 });
 
 app.get('/logout', function(req, res) {
