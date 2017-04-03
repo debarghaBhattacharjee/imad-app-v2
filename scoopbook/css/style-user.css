@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+#navbar-user {
+	background-color: #8d181c;
+
+}
+
+.navbar-default .navbar-brand {
+    color: #f7f7f7;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #5e1709;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #fff;
+}
+
+.dropdown-menu-user {
+	background-color: #8d181c;
+}
+
+.dropdown-menu-user a {
+	background-color: #8d181c;
+}
+
+
+a {
+	background-color: #8d181c;;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #5e1709;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #8d181c;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #5e1709;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover {
+	cursor: pointer;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    cursor: pointer;
+}
+
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #982f32;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #5e1709;
+}
+
+.glyphicon {
+	color: #fff;
+}
+
+@media (max-width: 767px) {
+	
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+ }
+	
+.navbar-nav .open .dropdown-menu {
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0;
+		background-color: #8d181c;
+		border: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+     }
+	
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background-color: #8d181c;
+    }
+	
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+        background-color: #5e1709;
+    }
+	.section-1 .container {
+		margin-top: 10%;	
+	}
+
+        .section-2 .container {
+		margin-top: 7%;	
+	}
+
+        .section-3 .container {
+		margin-top: 7%;	
+	}
+
+}

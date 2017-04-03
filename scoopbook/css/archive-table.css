@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+#archiveInput {
+
+  background-image: url('../images/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+#archiveTable {
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+	margin-bottom: 10%; 
+	font-size: 14px;
+	opacity: 1.0;
+}
+
+#archiveTable th, #archiveTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#archiveTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#archiveTable tr.header {
+  background-color: #8d181c;
+  color: #ddd;
+}
+
+#archiveTable tr.header:hover {
+  background-color: #8d181c;
+  cursor: default;
+}
+
+#archiveTable tr {
+  background-color: #f1f1f1;
+}
+
+#archiveTable tr:hover {
+  cursor: pointer;
+  background-color: #03abc9;
+  color: #ddd;
+}
+

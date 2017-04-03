@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+         <head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Scoopbook</title>
+			<!-- For Montserrat Font -->
+			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+			<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
+			<link href="css/bootstrap-3.3.4.css" rel="stylesheet" type="text/css">
+			<!-- User-Defined Stylesheet -->
+			<link href="css/about-user.css" rel="stylesheet" type="text/css">
+			<link href="css/style-user.css" rel="stylesheet" type="text/css">
+			<link href="css/archive-table.css" rel="stylesheet" type="text/css">
+			<link href="css/index-style.css" rel="stylesheet" type="text/css">
+            <link href="css/loginReg-style.css" rel="stylesheet" type="text/css">
+			<!-- User-Defined Scripts -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+			<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+			<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
+			<!-- Copyright 2015 Adobe Systems Incorporated. All rights reserved. -->
+			</head>
+			<body>
+				<nav class="navbar navbar-default navbar-fixed-top" id="navbar-user">
+					  <div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+						  <a class="navbar-brand" href="/">Scoopbook</a></div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="topFixedNavbar1">
+						  <ul class="nav navbar-nav" id="loginParent1">
+							<li class="active dropdown loginHome" id="active-user" style="display:none" href="#">
+                                <a>Home
+                                <span class="sr-only">(current)</span></a></li>
+							<li><a onclick="loadArchive()" >Archive</a></li>
+							<li class="dropdown" id="loginUpload" style="display:none"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Upload<span class="caret"></span></a>
+							  <ul class="dropdown-menu  dropdown-menu-user" role="menu">
+								<li><a href="#">Article</a></li>
+								<li><a href="#">Photo</a></li>
+							  </ul>
+							</li>
+						  </ul>
+						  <form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+							  <input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default" id="nav-submit-but">Submit</button>
+						  </form>
+						  <ul class="nav navbar-nav navbar-right" id="loginParent2">
+                            <li><a onclick="loadAbout()">About</a></li>
+                            <li  id="loginShortcut" onclick="goToByScroll('formLink')"><a>Login</a></li>
+							<li class="dropdown" id="loginAccount" style="display:none"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account<span class="caret"></span></a>
+							  <ul class="dropdown-menu dropdown-menu-user" role="menu">
+								<li><a href="#" id="profile" style="display:none">Profile</a></li>
+								<li><a href="#">Settings</a></li>
+								<li class="divider"></li>
+								<li><a onclick="logout()">Logout</a></li>
+							  </ul>
+							</li>
+						  </ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					  </div>
+					  <!-- /.container-fluid -->
+					</nav>
+					
+					<div id="content">
+                    
+                    <div class="section-1" id="indexSec1">
+					<div class="container">
+					<div class="row">
+					  <div class="col-sm-2"></div>
+
+						<div class="col-sm-8">
+							<h1>SCOOPBOOK</h1>
+						
+							<p>
+							At Scoopbook, you can get the latest scoops, newest ideas and stories shared by our community of users. We provide you a medium to share your views on various things which are happening all over the world. You can also connect with your peers and exchange ideas, stories and many more.
+							</p>
+							
+						</div>
+                        
+                        <div class="col-sm-2"></div>
+						
+					  </div>
+                      					
+					</div>
+				</div>
+                
+                <!-- section-2 -->
+
+				<div class="section-2" id="indexSec2">
+				  <div class="container">
+					<div class="row">
+					  <div class="col-sm-3">
+						  <h1>PERSONAL DETAILS</h1>
+					  </div>
+					  <div class="col-sm-2"></div>
+					  <div class="col-sm-7">
+						  <hr>
+							  <p><span>Email :</span> debarghab.kvdima@gmail.com</p>
+							  <p><span>Website :</span> scoopbook.com</p>
+							  <p><span>Phone :</span> (+91)7872 - 863711</p>
+							  <p><span>Address :</span> Alipurduar, West Bengal</p>
+						  
+					  </div>
+					</div>
+					<br><br><br>
+					<div class="row">
+					  <div class="col-sm-3">
+						<h1>EDUCATIONAL DETAILS</h1>
+					  </div>
+					  <div class="col-sm-2"></div>
+					  <div class="col-sm-7">
+						<hr>
+							<p>
+								<span>Class 10 :</span> Kendriya Vidyalaya Alipurduar Jn <br>
+								<span>Marks Obtained :</span> CGPA 10
+							</p>
+							
+							<p>
+								<span>Class 12 :</span> Kendriya Vidyalaya Alipuduar Jn <br>
+								<span>Marks Obtained :</span> 92 %
+							</p>
+							
+							<p>
+								<span>B.Tech :</span> Haldia Institute of Technology <br>
+								<span>Department :</span> Computer Science and Engineering
+							</p>
+					  </div>
+					</div>
+		
+				</div>
+				</div>
+                
+                <div class="section-1" id="indexSec3">
+					<div class="container">
+					<div class="row">
+					  <div class="col-sm-2"></div>
+
+						<div class="col-sm-8">
+							<h1>SCOOPBOOK</h1>
+						
+							<p>
+							At Scoopbook, you can get the latest scoops, newest ideas and stories shared by our community of users. We provide you a medium to share your views on various things which are happening all over the world. You can also connect with your peers and exchange ideas, stories and many more.
+							</p>
+							
+						</div>
+                        
+                        <div class="col-sm-2"></div>
+						
+					  </div>
+                      					
+					</div>
+				</div>
+                
+                <div class="section-1" id="indexSec4">
+				  <div class="container">
+					  <div class="row" id="sectionLink3">
+						  <div class="col-sm-4"></div>
+						  <div class="col-sm-4">
+							  <button type="button" class="btn btn-lg btn-default" 
+                          id="formLink">
+                              <span class="glyphicon glyphicon-thumbs-up"></span>
+                              LET'S GET STARTED
+                          </button>
+						  </div>
+						  <div class="col-sm-4"></div>
+					  </div>
+					
+				  </div>
+				</div>
+    
+					</div>
+                    
+                    <div class="loginScreen" id="login1" style="display:none">
+                            <div id="loginContainer">
+                            
+                            <form name="login" class="loginReg" id="loginForm"
+                            action="javascript:login()">
+                                
+                              <span
+                              style="float:right; cursor: pointer" class="hideForm glyphicon glyphicon-remove" 
+                              aria-hidden="true">
+                              </span>
+                              <br>
+                           
+                              <b>Username:</b><br>
+                              <input type="text" placeholder="Enter Username" name="uname" required>
+                              <b>Password:</b><br>
+                              <input type="password" placeholder="Enter Password" name="psw" required>
+                              <button type="submit">Login</button><br>
+                              <input type="checkbox" checked="checked" style="width: auto; height: auto">                                         Remember me
+                          
+                              <hr>
+                              <p style="text-align: center">
+                                  <a id="regLink">New User? Register Here.</a><br> 
+                              </p>
+                          
+                            </form>
+                          
+                              <form name="register" class="loginReg" id="regForm"
+                              action="javascript:register()">
+                                    
+                                 <span 
+                                      style="float:right; cursor: pointer" class="hideForm glyphicon glyphicon-remove" 
+                                      aria-hidden="true">
+                                 </span>
+                                <br>
+                                    
+                          
+                                <b>First Name:</b><br>
+                                <input type="text" placeholder="Enter First Name" name="fname" required>
+                                <b>Last Name:</b><br>
+                                <input type="text" placeholder="Enter Last Name" name="lname" required>
+                                <b>Email:</b><br>
+                                <input type="email" placeholder="Enter Email Address" name="email" required>
+                                <b>Username:</b><br>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                                <b>Password:</b><br>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                <b>Confirm Password:</b><br>
+                                <input type="password" placeholder="Re-enter Password" name="cnfpsw" required>
+                          
+                                <button type="submit">Register</button>
+                                <button type="button" id="loginLink">Back</button><br>
+                                  
+                                  
+                              </form>
+                          
+                        
+                        </div>
+                      </div> 
+                    
+                    
+					   
+					
+					
+					
+					
+					<!-- Include all compiled plugins (below), or include individual files as needed --> 
+                    <script type="text/javascript" src="js/main.js"></script>
+				    <script type="text/javascript" src="js/userJavascript.js"></script>
+                    
+				    <!-- <script src="js/bootstrap.js" type="text/javascript"></script> -->
+				    <script src="js/bootstrap-3.3.4.js" type="text/javascript"></script>
+			</body>
+		</html>

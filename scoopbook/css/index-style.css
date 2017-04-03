@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@keyframes BackgroundGradient {
+	0%{background-position: 0% 50%;}
+	50%{
+		background-position: 100% 50%;
+		color: #96cbe0;
+	}
+	100%{background-position: 0% 50%;}
+
+}
+
+#indexSec1 {
+	font-family: Open Sans, sans-serif;
+	font-size: 16px;
+	margin-top: 7%;
+	
+	padding-bottom: 14%;
+	color: #D9B8B8;
+	background: linear-gradient(132deg, #8d181c, #03abc9);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 30s ease infinite;
+}
+
+#indexSec1 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+#indexSec3 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	color: #000;
+	font-weight: 500;
+	font-size: 36px;
+	letter-spacing: 9px;
+	text-transform: uppercase;
+	margin-bottom: 7%;
+}
+
+#indexSec2 {
+	
+    padding-bottom: 3%;
+}
+
+#indexSec3 {
+
+	background: linear-gradient(132deg, #8d181c, #111);
+	font-size: 16px;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	padding-bottom: 10%;
+	color: #90989B;
+	font-family: Open Sans, sans-serif;	
+}
+
+#indexSec4 {
+	padding-top: 4%;
+}
+
+#indexLogin {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+@media only screen and (max-width: 810px) {
+    .indexSection {
+		margin-top: 15%;
+		padding-top: 12%;
+		padding-bottom: 12%;
+	}
+}
